@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .main-header {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .for-log,
+        .for-pan,
+        .header-content {
+            width: fit-content;
+            height: fit-content;
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+            width: 60px;
+
+        }
+
+        .header-info {
+            display: flex;
+            text-align: center;
+        }
+
+        .body-main-header {
+            text-align: center;
+        }
+
+        .body-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .body-info-left-text {
+            text-align: start;
+        }
+
+        .body-info-right-text {
+            text-align: end;
+        }
+
+        table {
+            width: 100%;
+
+        }
+
+
+        .main-footer {
+            text-align: end;
+            display: flex;
+            justify-content: end;
+            padding-left: 90px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        th {
+            /* border: 1px solid #000; */
+            border-top: 0px;
+            border-left: 0px;
+
+
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .footer-body {
+            display: flex;
+        }
+
+        thead tr {
+            border-bottom: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container pt-5 pb-1" style="border-bottom: 1px solid black;">
+            <div class="main-header">
+                <div class="for-logo">
+                    <div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/2048px-LEGO_logo.svg.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="header-content">
+                    <h4>Lego</h4>
+                    <div class="header-info">
+                        Address:MulKot Sunkosi gaupalika-5, nepal
+                        <br>
+                        tel: +977-9865369090 | Email: sales@logo.com.np
+                        <br>
+                        Website: http:// logo.com.np
+                    </div>
+                </div>
+                <div class="for-pan">
+                    <h6>PAN:609698837</h6>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container bg-white py-3">
+            <div class="body-main-header border-bottom">
+                <div class="body main">
+                    <h3>Invoice</h3>
+                    Copy of Invoice
+                </div>
+                <div>
+                    <div class="body-info pt-1">
+                        <div class="body-info-left-text">
+                            Guest name: Mahesh Dalle <br>
+                            Company Name:<br>
+                            Address:<br>
+                            Customer PAN:<br>
+                            Billing Instructor:<br>
+                        </div>
+                        <div class="body-info-right-text">
+                            Bill No: INV/2024.02147 <br>
+                            Meal plan: bb<br>
+                            PAX: 2<br>
+                            Arival Date: 2024-03-10 15:00:00<br>
+                            Arival Date: 2024-03-11 15:00:00<br>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <table class="table table-border">
+                <thead class="border-bottom p-0">
+                    <tr>
+                        <th>Sn</th>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Rate</th>
+                        <th>Exchange Rate</th>
+                        <th>Local Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2024-1-11</td>
+                        <td>17 single Ctd twin</td>
+                        <td>3097.35</td>
+                        <td>1</td>
+                        <td>3097.35</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2024-1-11</td>
+                        <td>Restaurant bill</td>
+                        <td>5212.35</td>
+                        <td>1</td>
+                        <td>3097.35</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2024-1-11</td>
+                        <td>17 single Ctd twin</td>
+                        <td>3097.35</td>
+                        <td>1</td>
+                        <td>3097.35</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <div class="pt-5">
+                <div class="main-footer border-bottom border-top">
+                    <div class="main-footer">
+                        <span>
+                            subtotal Amount <br>
+                            Discount Amount <br>
+                            Taxable Amount<br>
+                            13% VAT Added Tax<br>
+                            subtotal Amount<br>
+                        </span>
+                    </div>
+                    <div class="main-footer">
+                        <span>
+                            11,407.08 <br>
+                            0.00<br>
+                            11,407.08<br>
+                            1,482.91<br>
+                            12890.00<br>
+                        </span>
+                        <ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+                <div class="border-bottom">
+                    <div style="width: 100%; border-top: 1px solid black;">
+                    </div>
+                    <h6>In words: Twelve Thousand Eight Hunderd And Ninty Rupee Only</h6>
+                    <div style="width: 100%; border-top: 1px solid black;">
+                    </div>
+                </div>
+                <div>
+                    <span>Printed by: administrator</span><br>
+                    <span>Printed Date: 01/09/2023 17:25:22</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="bg-white p-5">
+            <div class="body-main-header pb-2">
+
+                <div>
+                    <div class="container body-info pt-5">
+                        <div class="footer-info-left-text border-top">
+                            <div style="width: 200px; border-top: 1px solid black;">
+                            </div>
+                            Cashier
+                        </div>
+                        <div class="body main">
+                            <p>
+                                <b>Thank You For Your visit</b>
+                            </p>
+                        </div>
+                        <div class="footer-info-left-text border-top">
+                            <div style="width: 200px; border-top: 1px solid black;">
+                            </div>
+                            Guest Signature
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
